@@ -1,0 +1,199 @@
+
+--------------------------25-03-2021 12:23:48-----------------------
+Payment started :TEST080553032155
+
+--------------------------25-03-2021 12:23:54-----------------------
+Payment started :TEST080553032155
+
+--------------------------25-03-2021 12:25:11-----------------------
+Writing to DB
+
+--------------------------25-03-2021 12:25:12-----------------------
+Writing to DB
+
+--------------------------25-03-2021 12:26:28-----------------------
+Error checking existing payment
+
+--------------------------25-03-2021 12:26:28-----------------------
+Error checking existing payment
+
+--------------------------25-03-2021 12:33:04-----------------------
+Payment started :TEST080553032155
+
+--------------------------25-03-2021 12:33:11-----------------------
+Payment started :TEST080553032155
+
+--------------------------25-03-2021 12:33:44-----------------------
+Writing to DB
+
+--------------------------25-03-2021 12:33:54-----------------------
+Writing to DB
+
+--------------------------25-03-2021 12:34:56-----------------------
+Payment started :TEST080553032155
+
+--------------------------25-03-2021 12:35:16-----------------------
+Writing to DB
+
+--------------------------25-03-2021 12:36:14-----------------------
+Payment started :TEST080553032155
+
+--------------------------25-03-2021 12:36:17-----------------------
+Writing to DB
+
+--------------------------25-03-2021 12:36:17-----------------------
+Payment already exist
+
+--------------------------01-05-2021 12:48:40-----------------------
+Payment started :TEST080553032155
+
+--------------------------01-05-2021 12:48:58-----------------------
+Payment started :TEST080553032155
+
+--------------------------01-05-2021 14:28:33-----------------------
+Payment started :TEST080553032155
+
+--------------------------01-05-2021 14:28:34-----------------------
+Writing to DB
+
+--------------------------01-05-2021 14:28:35-----------------------
+Error checking existing payment
+
+--------------------------01-05-2021 14:36:27-----------------------
+Payment started :TEST080553032155
+
+--------------------------01-05-2021 14:36:28-----------------------
+Writing to DB
+
+--------------------------01-05-2021 14:36:29-----------------------
+Error checking existing payment
+
+--------------------------01-05-2021 14:37:05-----------------------
+Payment started :TEST080553032155
+
+--------------------------01-05-2021 14:37:05-----------------------
+Writing to DB
+
+--------------------------01-05-2021 14:37:05-----------------------
+Error checking existing payment
+
+--------------------------08-05-2021 18:33:27-----------------------
+Payment started :TEST080553032155
+
+--------------------------08-05-2021 18:33:32-----------------------
+Writing to DB
+
+--------------------------08-05-2021 18:33:48-----------------------
+Error checking existing payment
+
+--------------------------08-05-2021 18:35:41-----------------------
+Payment started :TEST080553032155
+
+--------------------------08-05-2021 18:36:01-----------------------
+Writing to DB
+
+--------------------------08-05-2021 18:44:13-----------------------
+Payment started :TEST080553032155
+
+--------------------------08-05-2021 18:44:20-----------------------
+Writing to DB
+
+--------------------------08-05-2021 18:44:39-----------------------
+Error checking existing payment
+
+--------------------------09-05-2021 21:12:28-----------------------
+Payment started :TEST080553032155
+
+--------------------------09-05-2021 21:12:34-----------------------
+Writing to DB
+
+--------------------------09-05-2021 21:12:38-----------------------
+Error checking existing payment
+
+--------------------------09-05-2021 21:21:14-----------------------
+Payment started :TEST080553032155
+
+--------------------------09-05-2021 21:21:21-----------------------
+Writing to DB
+
+--------------------------09-05-2021 21:21:26-----------------------
+Error checking existing payment
+
+--------------------------26-05-2021 23:51:56-----------------------
+Payment started :90754630730
+
+--------------------------27-05-2021 14:12:43-----------------------
+Payment started :90754689754
+
+--------------------------27-05-2021 14:53:23-----------------------
+Payment started :90754696016
+
+--------------------------27-05-2021 19:37:33-----------------------
+Payment started :90754739137
+
+--------------------------28-05-2021 00:14:51-----------------------
+Payment started :90754776554
+
+--------------------------28-05-2021 00:49:43-----------------------
+Payment started :90754783777
+
+--------------------------31-05-2021 14:36:56-----------------------
+Payment started :90755128497
+
+--------------------------31-05-2021 14:37:09-----------------------
+Payment started :90755128497
+
+--------------------------31-05-2021 15:39:52-----------------------
+Payment started :90755140618
+
+--------------------------31-05-2021 15:39:54-----------------------
+Payment started :90755140618
+
+--------------------------31-05-2021 16:41:22-----------------------
+Payment started :90755149732
+
+--------------------------31-05-2021 16:41:24-----------------------
+Payment started :90755149732
+
+--------------------------01-06-2021 00:17:02-----------------------
+Payment started :90755213995
+
+--------------------------01-06-2021 00:17:04-----------------------
+Payment started :90755213995
+
+--------------------------02-06-2021 23:00:53-----------------------
+Payment started :90755480657
+
+--------------------------02-06-2021 23:13:48-----------------------
+Payment started :90755482579
+
+--------------------------04-06-2021 00:44:29-----------------------
+Payment started :90755628341
+
+--------------------------05-06-2021 20:01:38-----------------------
+Payment started :90755816325
+
+--------------------------05-06-2021 20:01:39-----------------------
+Payment started :90755816325
+
+--------------------------09-03-2022 19:26:12-----------------------
+/payment/getpaymenturlAn exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure()' to the 'UseMySql' call.
+
+--------------------------09-03-2022 19:26:12-----------------------
+/payment/getpaymenturlMySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   at MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, ILoadBalancer loadBalancer, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ServerSession.cs:line 442
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionPool.cs:line 112
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ConnectionPool.cs:line 141
+   at MySql.Data.MySqlClient.MySqlConnection.CreateSessionAsync(ConnectionPool pool, Nullable`1 ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 645
+   at MySql.Data.MySqlClient.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 312
+   at MySql.Data.MySqlClient.MySqlConnection.Open() in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlConnection.cs:line 280
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlRelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction(IsolationLevel isolationLevel)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.BeginTransaction()
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)

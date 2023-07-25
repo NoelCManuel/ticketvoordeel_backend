@@ -1,0 +1,900 @@
+Quoting
+--------------------------3/30/2023 14:04:50-----------------------
+{"couponCode":"","currencyCode":"EUR","dateTimeFrom":"2023-08-13T14:20:00Z","dateTimeTo":"2023-08-20T13:20:00Z","labelAbbreviation":"QPA","locationAbbreviation":"AMS","referral":""}
+
+Booking
+--------------------------3/30/2023 14:04:51-----------------------
+{
+  "currency": {
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "currencyRate": 1.00000,
+    "currencySymbol": "€"
+  },
+  "products": [
+    {
+      "name": "001_AMS_Medium_Shuttle",
+      "abbreviation": "AMSM",
+      "description": "",
+      "isSoldOut": false,
+      "isValet": false,
+      "availableSpots": 1936,
+      "isCarRegistrationPlateRequiredOnDefaultParking": false,
+      "isLastMinuteBookingAvailable": true,
+      "isFlightInformationRequired": false,
+      "parkingAbbreviation": null,
+      "pricing": {
+        "pricePerDay": 0.0,
+        "regularPrice": 81.50,
+        "vatAmount": 14.14,
+        "vatRate": 21.00,
+        "totalPrice": 81.50,
+        "refundablePercentage": 100.00,
+        "refundableFixedFee": null,
+        "priceInclVAT": 81.50,
+        "priceExclVAT": 67.36,
+        "commission": "15.00%",
+        "commissionAmountInclVAT": 12.23,
+        "commissionAmountExclVAT": 10.11,
+        "priceExclCommissionInclVAT": 69.28,
+        "priceExclCommissionExclVAT": 57.26,
+        "selectedPaymentLocation": "none",
+        "supportedPaymentLocations": [
+          "baCharged"
+        ],
+        "supportedPaymentMethods": [],
+        "supportedCreditCards": [],
+        "couponDiscount": {
+          "couponCode": null,
+          "couponValid": false,
+          "couponDescription": null,
+          "amount": 0.0
+        },
+        "referralAdjustment": {
+          "amount": 0.0
+        }
+      },
+      "services": [],
+      "displayNames": [
+        {
+          "language": "dutch",
+          "text": "Parking Flex"
+        },
+        {
+          "language": "french",
+          "text": "Parking Flex"
+        },
+        {
+          "language": "english",
+          "text": "Parking Flex"
+        }
+      ],
+      "geoCoordinates": [
+        {
+          "latitude": "52.270457",
+          "longitude": "4.7794084"
+        },
+        {
+          "latitude": "52.268782",
+          "longitude": "4.7741968"
+        }
+      ]
+    },
+    {
+      "name": "001_AMS_Valet_onlinelater",
+      "abbreviation": "AMSVL",
+      "description": "",
+      "isSoldOut": false,
+      "isValet": true,
+      "availableSpots": 241,
+      "isCarRegistrationPlateRequiredOnDefaultParking": false,
+      "isLastMinuteBookingAvailable": true,
+      "isFlightInformationRequired": false,
+      "parkingAbbreviation": null,
+      "pricing": {
+        "pricePerDay": 0.0,
+        "regularPrice": 120.00,
+        "vatAmount": 20.83,
+        "vatRate": 21.00,
+        "totalPrice": 120.00,
+        "refundablePercentage": 100.00,
+        "refundableFixedFee": null,
+        "priceInclVAT": 120.00,
+        "priceExclVAT": 99.17,
+        "commission": "15.00%",
+        "commissionAmountInclVAT": 18.00,
+        "commissionAmountExclVAT": 14.88,
+        "priceExclCommissionInclVAT": 102.00,
+        "priceExclCommissionExclVAT": 84.29,
+        "selectedPaymentLocation": "none",
+        "supportedPaymentLocations": [
+          "baCharged"
+        ],
+        "supportedPaymentMethods": [],
+        "supportedCreditCards": [],
+        "couponDiscount": {
+          "couponCode": null,
+          "couponValid": false,
+          "couponDescription": null,
+          "amount": 0.0
+        },
+        "referralAdjustment": {
+          "amount": 0.0
+        }
+      },
+      "services": [],
+      "displayNames": [
+        {
+          "language": "dutch",
+          "text": "Valet service"
+        },
+        {
+          "language": "french",
+          "text": "Service de Voiturier"
+        },
+        {
+          "language": "english",
+          "text": "Valet service"
+        }
+      ],
+      "geoCoordinates": [
+        {
+          "latitude": "52.3099285",
+          "longitude": "4.7633235"
+        }
+      ]
+    }
+  ],
+  "locationTimeZoneIanaCode": "Europe/Amsterdam"
+}
+
+Quoting
+--------------------------3/30/2023 14:20:28-----------------------
+{"couponCode":"","currencyCode":"EUR","dateTimeFrom":"2023-07-16T10:35:00Z","dateTimeTo":"2023-07-23T19:20:00Z","labelAbbreviation":"QPA","locationAbbreviation":"AMS","referral":""}
+
+Booking
+--------------------------3/30/2023 14:20:29-----------------------
+{
+  "currency": {
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "currencyRate": 1.00000,
+    "currencySymbol": "€"
+  },
+  "products": [
+    {
+      "name": "001_AMS_Medium_Shuttle",
+      "abbreviation": "AMSM",
+      "description": "",
+      "isSoldOut": false,
+      "isValet": false,
+      "availableSpots": 1930,
+      "isCarRegistrationPlateRequiredOnDefaultParking": false,
+      "isLastMinuteBookingAvailable": true,
+      "isFlightInformationRequired": false,
+      "parkingAbbreviation": null,
+      "pricing": {
+        "pricePerDay": 0.0,
+        "regularPrice": 78.50,
+        "vatAmount": 13.62,
+        "vatRate": 21.00,
+        "totalPrice": 78.50,
+        "refundablePercentage": 100.00,
+        "refundableFixedFee": null,
+        "priceInclVAT": 78.50,
+        "priceExclVAT": 64.88,
+        "commission": "15.00%",
+        "commissionAmountInclVAT": 11.78,
+        "commissionAmountExclVAT": 9.74,
+        "priceExclCommissionInclVAT": 66.73,
+        "priceExclCommissionExclVAT": 55.15,
+        "selectedPaymentLocation": "none",
+        "supportedPaymentLocations": [
+          "baCharged"
+        ],
+        "supportedPaymentMethods": [],
+        "supportedCreditCards": [],
+        "couponDiscount": {
+          "couponCode": null,
+          "couponValid": false,
+          "couponDescription": null,
+          "amount": 0.0
+        },
+        "referralAdjustment": {
+          "amount": 0.0
+        }
+      },
+      "services": [],
+      "displayNames": [
+        {
+          "language": "dutch",
+          "text": "Parking Flex"
+        },
+        {
+          "language": "french",
+          "text": "Parking Flex"
+        },
+        {
+          "language": "english",
+          "text": "Parking Flex"
+        }
+      ],
+      "geoCoordinates": [
+        {
+          "latitude": "52.270457",
+          "longitude": "4.7794084"
+        },
+        {
+          "latitude": "52.268782",
+          "longitude": "4.7741968"
+        }
+      ]
+    },
+    {
+      "name": "001_AMS_Valet_onlinelater",
+      "abbreviation": "AMSVL",
+      "description": "",
+      "isSoldOut": false,
+      "isValet": true,
+      "availableSpots": 233,
+      "isCarRegistrationPlateRequiredOnDefaultParking": false,
+      "isLastMinuteBookingAvailable": true,
+      "isFlightInformationRequired": false,
+      "parkingAbbreviation": null,
+      "pricing": {
+        "pricePerDay": 0.0,
+        "regularPrice": 117.50,
+        "vatAmount": 20.39,
+        "vatRate": 21.00,
+        "totalPrice": 117.50,
+        "refundablePercentage": 100.00,
+        "refundableFixedFee": null,
+        "priceInclVAT": 117.50,
+        "priceExclVAT": 97.11,
+        "commission": "15.00%",
+        "commissionAmountInclVAT": 17.63,
+        "commissionAmountExclVAT": 14.57,
+        "priceExclCommissionInclVAT": 99.88,
+        "priceExclCommissionExclVAT": 82.55,
+        "selectedPaymentLocation": "none",
+        "supportedPaymentLocations": [
+          "baCharged"
+        ],
+        "supportedPaymentMethods": [],
+        "supportedCreditCards": [],
+        "couponDiscount": {
+          "couponCode": null,
+          "couponValid": false,
+          "couponDescription": null,
+          "amount": 0.0
+        },
+        "referralAdjustment": {
+          "amount": 0.0
+        }
+      },
+      "services": [],
+      "displayNames": [
+        {
+          "language": "dutch",
+          "text": "Valet service"
+        },
+        {
+          "language": "french",
+          "text": "Service de Voiturier"
+        },
+        {
+          "language": "english",
+          "text": "Valet service"
+        }
+      ],
+      "geoCoordinates": [
+        {
+          "latitude": "52.3099285",
+          "longitude": "4.7633235"
+        }
+      ]
+    }
+  ],
+  "locationTimeZoneIanaCode": "Europe/Amsterdam"
+}
+
+Quoting
+--------------------------3/30/2023 14:21:03-----------------------
+{"couponCode":"","currencyCode":"EUR","dateTimeFrom":"2023-07-16T10:35:00Z","dateTimeTo":"2023-07-23T19:20:00Z","labelAbbreviation":"QPA","locationAbbreviation":"AMS","referral":""}
+
+Booking
+--------------------------3/30/2023 14:21:04-----------------------
+{
+  "currency": {
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "currencyRate": 1.00000,
+    "currencySymbol": "€"
+  },
+  "products": [
+    {
+      "name": "001_AMS_Medium_Shuttle",
+      "abbreviation": "AMSM",
+      "description": "",
+      "isSoldOut": false,
+      "isValet": false,
+      "availableSpots": 1930,
+      "isCarRegistrationPlateRequiredOnDefaultParking": false,
+      "isLastMinuteBookingAvailable": true,
+      "isFlightInformationRequired": false,
+      "parkingAbbreviation": null,
+      "pricing": {
+        "pricePerDay": 0.0,
+        "regularPrice": 78.50,
+        "vatAmount": 13.62,
+        "vatRate": 21.00,
+        "totalPrice": 78.50,
+        "refundablePercentage": 100.00,
+        "refundableFixedFee": null,
+        "priceInclVAT": 78.50,
+        "priceExclVAT": 64.88,
+        "commission": "15.00%",
+        "commissionAmountInclVAT": 11.78,
+        "commissionAmountExclVAT": 9.74,
+        "priceExclCommissionInclVAT": 66.73,
+        "priceExclCommissionExclVAT": 55.15,
+        "selectedPaymentLocation": "none",
+        "supportedPaymentLocations": [
+          "baCharged"
+        ],
+        "supportedPaymentMethods": [],
+        "supportedCreditCards": [],
+        "couponDiscount": {
+          "couponCode": null,
+          "couponValid": false,
+          "couponDescription": null,
+          "amount": 0.0
+        },
+        "referralAdjustment": {
+          "amount": 0.0
+        }
+      },
+      "services": [],
+      "displayNames": [
+        {
+          "language": "dutch",
+          "text": "Parking Flex"
+        },
+        {
+          "language": "french",
+          "text": "Parking Flex"
+        },
+        {
+          "language": "english",
+          "text": "Parking Flex"
+        }
+      ],
+      "geoCoordinates": [
+        {
+          "latitude": "52.270457",
+          "longitude": "4.7794084"
+        },
+        {
+          "latitude": "52.268782",
+          "longitude": "4.7741968"
+        }
+      ]
+    },
+    {
+      "name": "001_AMS_Valet_onlinelater",
+      "abbreviation": "AMSVL",
+      "description": "",
+      "isSoldOut": false,
+      "isValet": true,
+      "availableSpots": 233,
+      "isCarRegistrationPlateRequiredOnDefaultParking": false,
+      "isLastMinuteBookingAvailable": true,
+      "isFlightInformationRequired": false,
+      "parkingAbbreviation": null,
+      "pricing": {
+        "pricePerDay": 0.0,
+        "regularPrice": 117.50,
+        "vatAmount": 20.39,
+        "vatRate": 21.00,
+        "totalPrice": 117.50,
+        "refundablePercentage": 100.00,
+        "refundableFixedFee": null,
+        "priceInclVAT": 117.50,
+        "priceExclVAT": 97.11,
+        "commission": "15.00%",
+        "commissionAmountInclVAT": 17.63,
+        "commissionAmountExclVAT": 14.57,
+        "priceExclCommissionInclVAT": 99.88,
+        "priceExclCommissionExclVAT": 82.55,
+        "selectedPaymentLocation": "none",
+        "supportedPaymentLocations": [
+          "baCharged"
+        ],
+        "supportedPaymentMethods": [],
+        "supportedCreditCards": [],
+        "couponDiscount": {
+          "couponCode": null,
+          "couponValid": false,
+          "couponDescription": null,
+          "amount": 0.0
+        },
+        "referralAdjustment": {
+          "amount": 0.0
+        }
+      },
+      "services": [],
+      "displayNames": [
+        {
+          "language": "dutch",
+          "text": "Valet service"
+        },
+        {
+          "language": "french",
+          "text": "Service de Voiturier"
+        },
+        {
+          "language": "english",
+          "text": "Valet service"
+        }
+      ],
+      "geoCoordinates": [
+        {
+          "latitude": "52.3099285",
+          "longitude": "4.7633235"
+        }
+      ]
+    }
+  ],
+  "locationTimeZoneIanaCode": "Europe/Amsterdam"
+}
+
+Quoting
+--------------------------3/30/2023 14:55:53-----------------------
+{"couponCode":"","currencyCode":"EUR","dateTimeFrom":"2023-08-06T10:35:00Z","dateTimeTo":"2023-08-13T19:20:00Z","labelAbbreviation":"QPA","locationAbbreviation":"AMS","referral":""}
+
+Booking
+--------------------------3/30/2023 14:55:53-----------------------
+{
+  "currency": {
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "currencyRate": 1.00000,
+    "currencySymbol": "€"
+  },
+  "products": [
+    {
+      "name": "001_AMS_Medium_Shuttle",
+      "abbreviation": "AMSM",
+      "description": "",
+      "isSoldOut": false,
+      "isValet": false,
+      "availableSpots": 1881,
+      "isCarRegistrationPlateRequiredOnDefaultParking": false,
+      "isLastMinuteBookingAvailable": true,
+      "isFlightInformationRequired": false,
+      "parkingAbbreviation": null,
+      "pricing": {
+        "pricePerDay": 0.0,
+        "regularPrice": 81.50,
+        "vatAmount": 14.14,
+        "vatRate": 21.00,
+        "totalPrice": 81.50,
+        "refundablePercentage": 100.00,
+        "refundableFixedFee": null,
+        "priceInclVAT": 81.50,
+        "priceExclVAT": 67.36,
+        "commission": "15.00%",
+        "commissionAmountInclVAT": 12.23,
+        "commissionAmountExclVAT": 10.11,
+        "priceExclCommissionInclVAT": 69.28,
+        "priceExclCommissionExclVAT": 57.26,
+        "selectedPaymentLocation": "none",
+        "supportedPaymentLocations": [
+          "baCharged"
+        ],
+        "supportedPaymentMethods": [],
+        "supportedCreditCards": [],
+        "couponDiscount": {
+          "couponCode": null,
+          "couponValid": false,
+          "couponDescription": null,
+          "amount": 0.0
+        },
+        "referralAdjustment": {
+          "amount": 0.0
+        }
+      },
+      "services": [],
+      "displayNames": [
+        {
+          "language": "dutch",
+          "text": "Parking Flex"
+        },
+        {
+          "language": "french",
+          "text": "Parking Flex"
+        },
+        {
+          "language": "english",
+          "text": "Parking Flex"
+        }
+      ],
+      "geoCoordinates": [
+        {
+          "latitude": "52.270457",
+          "longitude": "4.7794084"
+        },
+        {
+          "latitude": "52.268782",
+          "longitude": "4.7741968"
+        }
+      ]
+    },
+    {
+      "name": "001_AMS_Valet_onlinelater",
+      "abbreviation": "AMSVL",
+      "description": "",
+      "isSoldOut": false,
+      "isValet": true,
+      "availableSpots": 228,
+      "isCarRegistrationPlateRequiredOnDefaultParking": false,
+      "isLastMinuteBookingAvailable": true,
+      "isFlightInformationRequired": false,
+      "parkingAbbreviation": null,
+      "pricing": {
+        "pricePerDay": 0.0,
+        "regularPrice": 120.00,
+        "vatAmount": 20.83,
+        "vatRate": 21.00,
+        "totalPrice": 120.00,
+        "refundablePercentage": 100.00,
+        "refundableFixedFee": null,
+        "priceInclVAT": 120.00,
+        "priceExclVAT": 99.17,
+        "commission": "15.00%",
+        "commissionAmountInclVAT": 18.00,
+        "commissionAmountExclVAT": 14.88,
+        "priceExclCommissionInclVAT": 102.00,
+        "priceExclCommissionExclVAT": 84.29,
+        "selectedPaymentLocation": "none",
+        "supportedPaymentLocations": [
+          "baCharged"
+        ],
+        "supportedPaymentMethods": [],
+        "supportedCreditCards": [],
+        "couponDiscount": {
+          "couponCode": null,
+          "couponValid": false,
+          "couponDescription": null,
+          "amount": 0.0
+        },
+        "referralAdjustment": {
+          "amount": 0.0
+        }
+      },
+      "services": [],
+      "displayNames": [
+        {
+          "language": "dutch",
+          "text": "Valet service"
+        },
+        {
+          "language": "french",
+          "text": "Service de Voiturier"
+        },
+        {
+          "language": "english",
+          "text": "Valet service"
+        }
+      ],
+      "geoCoordinates": [
+        {
+          "latitude": "52.3099285",
+          "longitude": "4.7633235"
+        }
+      ]
+    }
+  ],
+  "locationTimeZoneIanaCode": "Europe/Amsterdam"
+}
+
+Quoting
+--------------------------3/30/2023 15:18:11-----------------------
+{"couponCode":"","currencyCode":"EUR","dateTimeFrom":"2023-06-18T10:00:00Z","dateTimeTo":"2023-06-25T18:45:00Z","labelAbbreviation":"QPA","locationAbbreviation":"AMS","referral":""}
+
+Booking
+--------------------------3/30/2023 15:18:12-----------------------
+{
+  "currency": {
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "currencyRate": 1.00000,
+    "currencySymbol": "€"
+  },
+  "products": [
+    {
+      "name": "001_AMS_Medium_Shuttle",
+      "abbreviation": "AMSM",
+      "description": "",
+      "isSoldOut": false,
+      "isValet": false,
+      "availableSpots": 1739,
+      "isCarRegistrationPlateRequiredOnDefaultParking": false,
+      "isLastMinuteBookingAvailable": true,
+      "isFlightInformationRequired": false,
+      "parkingAbbreviation": null,
+      "pricing": {
+        "pricePerDay": 0.0,
+        "regularPrice": 76.50,
+        "vatAmount": 13.28,
+        "vatRate": 21.00,
+        "totalPrice": 76.50,
+        "refundablePercentage": 100.00,
+        "refundableFixedFee": null,
+        "priceInclVAT": 76.50,
+        "priceExclVAT": 63.22,
+        "commission": "15.00%",
+        "commissionAmountInclVAT": 11.48,
+        "commissionAmountExclVAT": 9.49,
+        "priceExclCommissionInclVAT": 65.03,
+        "priceExclCommissionExclVAT": 53.74,
+        "selectedPaymentLocation": "none",
+        "supportedPaymentLocations": [
+          "baCharged"
+        ],
+        "supportedPaymentMethods": [],
+        "supportedCreditCards": [],
+        "couponDiscount": {
+          "couponCode": null,
+          "couponValid": false,
+          "couponDescription": null,
+          "amount": 0.0
+        },
+        "referralAdjustment": {
+          "amount": 0.0
+        }
+      },
+      "services": [],
+      "displayNames": [
+        {
+          "language": "dutch",
+          "text": "Parking Flex"
+        },
+        {
+          "language": "french",
+          "text": "Parking Flex"
+        },
+        {
+          "language": "english",
+          "text": "Parking Flex"
+        }
+      ],
+      "geoCoordinates": [
+        {
+          "latitude": "52.270457",
+          "longitude": "4.7794084"
+        },
+        {
+          "latitude": "52.268782",
+          "longitude": "4.7741968"
+        }
+      ]
+    },
+    {
+      "name": "001_AMS_Valet_onlinelater",
+      "abbreviation": "AMSVL",
+      "description": "",
+      "isSoldOut": false,
+      "isValet": true,
+      "availableSpots": 250,
+      "isCarRegistrationPlateRequiredOnDefaultParking": false,
+      "isLastMinuteBookingAvailable": true,
+      "isFlightInformationRequired": false,
+      "parkingAbbreviation": null,
+      "pricing": {
+        "pricePerDay": 0.0,
+        "regularPrice": 106.50,
+        "vatAmount": 18.48,
+        "vatRate": 21.00,
+        "totalPrice": 106.50,
+        "refundablePercentage": 100.00,
+        "refundableFixedFee": null,
+        "priceInclVAT": 106.50,
+        "priceExclVAT": 88.02,
+        "commission": "15.00%",
+        "commissionAmountInclVAT": 15.98,
+        "commissionAmountExclVAT": 13.21,
+        "priceExclCommissionInclVAT": 90.53,
+        "priceExclCommissionExclVAT": 74.82,
+        "selectedPaymentLocation": "none",
+        "supportedPaymentLocations": [
+          "baCharged"
+        ],
+        "supportedPaymentMethods": [],
+        "supportedCreditCards": [],
+        "couponDiscount": {
+          "couponCode": null,
+          "couponValid": false,
+          "couponDescription": null,
+          "amount": 0.0
+        },
+        "referralAdjustment": {
+          "amount": 0.0
+        }
+      },
+      "services": [],
+      "displayNames": [
+        {
+          "language": "dutch",
+          "text": "Valet service"
+        },
+        {
+          "language": "french",
+          "text": "Service de Voiturier"
+        },
+        {
+          "language": "english",
+          "text": "Valet service"
+        }
+      ],
+      "geoCoordinates": [
+        {
+          "latitude": "52.3099285",
+          "longitude": "4.7633235"
+        }
+      ]
+    }
+  ],
+  "locationTimeZoneIanaCode": "Europe/Amsterdam"
+}
+
+Quoting
+--------------------------3/30/2023 22:06:31-----------------------
+{"couponCode":"","currencyCode":"EUR","dateTimeFrom":"2023-08-13T10:35:00Z","dateTimeTo":"2023-08-20T19:20:00Z","labelAbbreviation":"QPA","locationAbbreviation":"AMS","referral":""}
+
+Booking
+--------------------------3/30/2023 22:06:32-----------------------
+{
+  "currency": {
+    "currencyCode": "EUR",
+    "currencyName": "Euro",
+    "currencyRate": 1.00000,
+    "currencySymbol": "€"
+  },
+  "products": [
+    {
+      "name": "001_AMS_Medium_Shuttle",
+      "abbreviation": "AMSM",
+      "description": "",
+      "isSoldOut": false,
+      "isValet": false,
+      "availableSpots": 1937,
+      "isCarRegistrationPlateRequiredOnDefaultParking": false,
+      "isLastMinuteBookingAvailable": true,
+      "isFlightInformationRequired": false,
+      "parkingAbbreviation": null,
+      "pricing": {
+        "pricePerDay": 0.0,
+        "regularPrice": 81.50,
+        "vatAmount": 14.14,
+        "vatRate": 21.00,
+        "totalPrice": 81.50,
+        "refundablePercentage": 100.00,
+        "refundableFixedFee": null,
+        "priceInclVAT": 81.50,
+        "priceExclVAT": 67.36,
+        "commission": "15.00%",
+        "commissionAmountInclVAT": 12.23,
+        "commissionAmountExclVAT": 10.11,
+        "priceExclCommissionInclVAT": 69.28,
+        "priceExclCommissionExclVAT": 57.26,
+        "selectedPaymentLocation": "none",
+        "supportedPaymentLocations": [
+          "baCharged"
+        ],
+        "supportedPaymentMethods": [],
+        "supportedCreditCards": [],
+        "couponDiscount": {
+          "couponCode": null,
+          "couponValid": false,
+          "couponDescription": null,
+          "amount": 0.0
+        },
+        "referralAdjustment": {
+          "amount": 0.0
+        }
+      },
+      "services": [],
+      "displayNames": [
+        {
+          "language": "dutch",
+          "text": "Parking Flex"
+        },
+        {
+          "language": "french",
+          "text": "Parking Flex"
+        },
+        {
+          "language": "english",
+          "text": "Parking Flex"
+        }
+      ],
+      "geoCoordinates": [
+        {
+          "latitude": "52.270457",
+          "longitude": "4.7794084"
+        },
+        {
+          "latitude": "52.268782",
+          "longitude": "4.7741968"
+        }
+      ]
+    },
+    {
+      "name": "001_AMS_Valet_onlinelater",
+      "abbreviation": "AMSVL",
+      "description": "",
+      "isSoldOut": false,
+      "isValet": true,
+      "availableSpots": 241,
+      "isCarRegistrationPlateRequiredOnDefaultParking": false,
+      "isLastMinuteBookingAvailable": true,
+      "isFlightInformationRequired": false,
+      "parkingAbbreviation": null,
+      "pricing": {
+        "pricePerDay": 0.0,
+        "regularPrice": 120.00,
+        "vatAmount": 20.83,
+        "vatRate": 21.00,
+        "totalPrice": 120.00,
+        "refundablePercentage": 100.00,
+        "refundableFixedFee": null,
+        "priceInclVAT": 120.00,
+        "priceExclVAT": 99.17,
+        "commission": "15.00%",
+        "commissionAmountInclVAT": 18.00,
+        "commissionAmountExclVAT": 14.88,
+        "priceExclCommissionInclVAT": 102.00,
+        "priceExclCommissionExclVAT": 84.29,
+        "selectedPaymentLocation": "none",
+        "supportedPaymentLocations": [
+          "baCharged"
+        ],
+        "supportedPaymentMethods": [],
+        "supportedCreditCards": [],
+        "couponDiscount": {
+          "couponCode": null,
+          "couponValid": false,
+          "couponDescription": null,
+          "amount": 0.0
+        },
+        "referralAdjustment": {
+          "amount": 0.0
+        }
+      },
+      "services": [],
+      "displayNames": [
+        {
+          "language": "dutch",
+          "text": "Valet service"
+        },
+        {
+          "language": "french",
+          "text": "Service de Voiturier"
+        },
+        {
+          "language": "english",
+          "text": "Valet service"
+        }
+      ],
+      "geoCoordinates": [
+        {
+          "latitude": "52.3099285",
+          "longitude": "4.7633235"
+        }
+      ]
+    }
+  ],
+  "locationTimeZoneIanaCode": "Europe/Amsterdam"
+}
+

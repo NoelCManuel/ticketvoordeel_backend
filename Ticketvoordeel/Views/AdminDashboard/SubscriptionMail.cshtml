@@ -1,0 +1,178 @@
+﻿
+@{
+    ViewData["Title"] = "SubscriptionMail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+
+<div class="page-heading">
+    <h1 class="page-title">Mail Subscription</h1>
+</div>
+<div class="page-content fade-in-up">
+    <div class="ibox">
+        <div class="ibox-head">
+            <div class="ibox-title">Mail Subscription List</div>
+        </div>
+        <div class="ibox-body">
+            <div style="display:flex">
+                <input type="text" id="copyClipboard" style="padding: 7px;">
+                <button id="mailList" onclick="copySelection()">Copy All Mails</button>
+            </div>
+            <table class="table table-striped table-bordered table-hover" id="example-table" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <th>
+                            Voornaam
+                        </th>
+                        <th>Email adres</th>
+                        <th class="notexport">Is Active</th>
+                        <th class="notexport">Creation Time</th>
+                        <th class="notexport">&nbsp;</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+
+@section Scripts {
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.3.1/js/dataTables.buttons.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.3.1/js/buttons.html5.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            toastr.options = {
+                'closeButton': true,
+                'debug': false,
+                'newestOnTop': false,
+                'progressBar': false,
+                'positionClass': 'toast-top-right',
+                'preventDuplicates': false,
+                'showDuration': '1000',
+                'hideDuration': '1000',
+                'timeOut': '5000',
+                'extendedTimeOut': '1000',
+                'showEasing': 'swing',
+                'hideEasing': 'linear',
+                'showMethod': 'fadeIn',
+                'hideMethod': 'fadeOut',
+            }
+
+            $('#example-table').DataTable({
+                dom: 'Bfrtip',
+                buttons: [
+                    {
+                        extend: 'csvHtml5',
+                        text: '<i class="fa fa-file-text-o"></i> CSV',
+                        titleAttr: 'CSV',
+                        title: 'NewsLetter List',
+                        exportOptions: {
+                            columns: ':not(.notexport)'
+                        }
+                    }
+                ],
+                
+            });
+
+            $("#subscriptionList").click(function () {
+                $.ajax({
+                    url: "/admin/downloadreport",
+                    async: false,
+                    method: 'POST',
+                    success: function (data) {
+                        save("SubscriptionUserList", data);
+                    },
+                    error: function () {
+                    }
+                });
+            });
+
+            $.get("/admin/getsubscription", function (res) {
+                if (res) {
+                    var userList = "";
+                    for (i = 0; i < res.length; i++) {
+                        $('#example-table').dataTable().fnAddData([
+                            res[i].name,
+                            res[i].email,
+                            res[i].isActive,
+                            res[i].creationTime,
+                            "<input type='button' class='btn btn-primary' value='Delete' onClick='sendDeleteRequest(" + res[i].id + ")' />"
+                        ]);
+                        userList += res[i].email;
+                        if (i + 1 < res.length) {
+                            userList += ' ';
+                        }
+
+                    }
+
+                    document.getElementById("copyClipboard").value = userList;
+                }
+            });
+
+        });
+
+        function save(filename, data) {
+            const blob = new Blob([data], { type: 'text/csv' });
+            if (window.navigator.msSaveOrOpenBlob) {
+                window.navigator.msSaveBlob(blob, filename);
+            }
+            else {
+                const elem = window.document.createElement('a');
+                elem.href = window.URL.createObjectURL(blob);
+                elem.download = filename;
+                document.body.appendChild(elem);
+                elem.click();
+                document.body.removeChild(elem);
+            }
+            toastr.success('File downloaded!')
+        }
+
+        function sendDeleteRequest(deleteId) {
+            $.ajax({
+                url: "/admin/deletesubscription",
+                async: false,
+                method: 'GET',
+                data: { Id: deleteId },
+                success: function (data) {
+                    if (data == "true") {
+                        toastr.success('User Record Deleted!');
+                    }
+                    else {
+                        toastr.error('Error while Deleting!');
+                    }
+                },
+                error: function () {
+                    toastr.error('Error while Deleting!');
+                }
+            });
+
+            setTimeout(function () { location.reload(); }, 2000);
+
+        }
+
+        function copySelection() {
+            var copyText = document.getElementById("copyClipboard");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999);
+            navigator.clipboard.writeText(copyText.value);
+            toastr.success('Copied');
+
+        }
+
+    </script>
+}
+
+
+
+
+

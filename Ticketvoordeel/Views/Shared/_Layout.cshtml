@@ -1,0 +1,129 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- GLOBAL MAINLY STYLES-->
+    <link href="/template/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/template/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="/template/vendors/themify-icons/css/themify-icons.css" rel="stylesheet" />
+    <link href="/template/vendors/bootstrap-markdown/css/bootstrap-markdown.min.css" rel="stylesheet" />
+    <link href="/template/vendors/DataTables/datatables.min.css" rel="stylesheet" />
+     <!-- THEME STYLES-->
+    <link href="/template/css/main.min.css" rel="stylesheet" />
+    <!-- PAGE LEVEL STYLES-->
+</head>
+
+<body class="fixed-navbar">
+    <div class="page-wrapper">
+        <!-- START HEADER-->
+        <header class="header">
+            <div class="page-brand">
+                <a class="link" href="/admindashboard">
+                    <span class="brand">
+                        Ticket
+                        <span class="brand-tip">Voordeel</span>
+                    </span>
+                    <span class="brand-mini">TV</span>
+                </a>
+            </div>
+            <div class="flexbox flex-1">
+                <!-- START TOP-LEFT TOOLBAR-->
+                <ul class="nav navbar-toolbar">
+                    <li>
+                        <a class="nav-link sidebar-toggler js-sidebar-toggler"><i class="ti-menu"></i></a>
+                    </li>
+                </ul>
+                <!-- END TOP-LEFT TOOLBAR-->
+                <!-- START TOP-RIGHT TOOLBAR-->
+                <ul class="nav navbar-toolbar">
+                    <li class="dropdown dropdown-user">
+                        <a class="nav-link dropdown-toggle link" data-toggle="dropdown">
+                            <img src="/template/img/admin-avatar.png" />
+                            <span></span>Admin<i class="fa fa-angle-down m-l-5"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            @*<a class="dropdown-item" href="profile.html"><i class="fa fa-user"></i>Profile</a>*@
+                            <li class="dropdown-divider"></li>
+                            <a class="dropdown-item" href="/login"><i class="fa fa-power-off"></i>Logout</a>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- END TOP-RIGHT TOOLBAR-->
+            </div>
+        </header>
+        <!-- END HEADER-->
+        <!-- START SIDEBAR-->
+        <nav class="page-sidebar" id="sidebar">
+            <div id="sidebar-collapse">
+                <ul class="side-menu metismenu">
+                    <li>
+                        <a class="active" href="/admindashboard">
+                            <i class="sidebar-item-icon fa fa-th-large"></i>
+                            <span class="nav-label">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="javascript:;">
+                            <i class="sidebar-item-icon fa fa-bookmark"></i>
+                            <span class="nav-label">Features</span><i class="fa fa-angle-left arrow"></i>
+                        </a>
+                        <ul class="nav-2-level collapse in">
+                            <li>
+                                <a href="/managedynamicpages">Dynamic Pages</a>
+                            </li>
+                            <li>
+                                <a href="/bookings">Bookings</a>
+                            </li>
+                            <li>
+                                <a href="/usercredits">User Credits</a>
+                            </li>
+                            <li>
+                                <a href="/history">Payment History</a>
+                            </li>
+                            <li>
+                                <a href="/duplicateBookingInfo">Duplicate PNR Booking</a>
+                            </li>
+                            <li>
+                                <a href="/subscriptionMail">Mail Subscription List</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- END SIDEBAR-->
+        <div class="content-wrapper">
+            <!-- START PAGE CONTENT-->
+            @RenderBody()
+            <!-- END PAGE CONTENT-->
+            <footer class="page-footer">
+                <div class="font-13">@DateTime.Now.Year © <b>Ticketvoordeel</b> - All rights reserved.</div>
+                <div class="to-top"><i class="fa fa-angle-double-up"></i></div>
+            </footer>
+        </div>
+    </div>
+    <!-- BEGIN PAGA BACKDROPS-->
+    <div class="sidenav-backdrop backdrop"></div>
+    <div class="preloader-backdrop">
+        <div class="page-preloader">Loading</div>
+    </div>
+    <!-- END PAGA BACKDROPS-->
+    <!-- CORE PLUGINS-->
+    <script src="/template/vendors/jquery/dist/jquery.min.js" type="text/javascript"></script>
+    <script src="/template/vendors/popper.js/dist/umd/popper.min.js" type="text/javascript"></script>
+    <script src="/template/vendors/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/template/vendors/metisMenu/dist/metisMenu.min.js" type="text/javascript"></script>
+    <script src="/template/vendors/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+    <script src="/template/vendors/jquery-validation/dist/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="/template/vendors/bootstrap-markdown/js/bootstrap-markdown.js" type="text/javascript"></script>
+    <script src="/template/vendors/DataTables/datatables.min.js" type="text/javascript"></script>
+    <script src="/template/js/app.min.js" type="text/javascript"></script>
+    <script src="https://cdn.tiny.cloud/1/v496bq6mq9p57600mqe3z4pxy4ajj5q7jtlp2r0dxf7m3n7w/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+
+</html>

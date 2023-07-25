@@ -1,0 +1,542 @@
+﻿@{
+    ViewData["Title"] = "TicketvoordeelCreateMail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    #TicketvoordeelMail {
+        background-color: #e54d95 !important;
+        color: white !important;
+    }
+
+        #TicketvoordeelMail .text, #TicketvoordeelMail .icon {
+            color: white !important;
+        }
+
+    #TicketvoordeelCreateMail {
+        color: #e54d95 !important;
+    }
+
+    .sticky {
+        position: sticky;
+        top: 0 !important;
+        color: #000;
+        overflow-x: hidden;
+        height: 100%;
+        background-color: #ffffff;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        z-index: 99999;
+    }
+
+    .sticky1 {
+        position: sticky;
+        overflow-x: hidden;
+        height: 100%;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        z-index: 99999;
+        top: 14rem !important;
+        border-radius: 13px;
+        color: white;
+        font-size: 2px !important;
+        background-color: #fafafa;
+        padding: 10px;
+        color: black;
+    }
+
+    .sticky2 {
+        position: sticky;
+        overflow-x: hidden;
+        height: 100%;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        z-index: 99999;
+        top: 14rem !important;
+        border-radius: 13px;
+        color: white;
+        font-size: 2px !important;
+        background-color: #fafafa;
+        padding: 10px;
+        color: black;
+    }
+
+    .cardAddition {
+        background-color: #fff;
+        width: 100%;
+    }
+
+    .mainPage {
+        background-color: #fff;
+        padding: 15px;
+        border-radius: 13px;
+    }
+
+    .card {
+        z-index: 0;
+        background-color: #ffffff;
+        padding-bottom: 44px;
+        border-radius: 10px;
+        border: none;
+    }
+
+    }
+
+    .top {
+        padding-top: 40px;
+        padding-left: 13% !important;
+        padding-right: 13% !important;
+    }
+
+    /*Icon progressbar*/
+    #progressbar {
+        margin-bottom: 30px;
+        overflow: hidden;
+        color: #455A64;
+        padding-left: 0px;
+        margin-top: 30px;
+    }
+
+        #progressbar li {
+            list-style-type: none;
+            font-size: 13px;
+            width: 25%;
+            float: left;
+            position: relative;
+            font-weight: 400;
+        }
+
+        #progressbar .step0:before {
+            font-family: FontAwesome;
+            content: "\f10c";
+            color: #fff;
+        }
+
+        #progressbar li:before {
+            width: 40px;
+            height: 40px;
+            line-height: 45px;
+            display: block;
+            font-size: 20px;
+            background: #C5CAE9;
+            border-radius: 50%;
+            margin: auto;
+            padding: 0px;
+        }
+
+        /*ProgressBar connectors*/
+        #progressbar li:after {
+            content: '';
+            width: 100%;
+            height: 12px;
+            background: #C5CAE9;
+            position: absolute;
+            left: 0;
+            top: 16px;
+            z-index: -1;
+        }
+
+        #progressbar li:last-child:after {
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            position: absolute;
+            left: -50%;
+        }
+
+        #progressbar li:nth-child(2):after, #progressbar li:nth-child(3):after {
+            left: -50%;
+        }
+
+        #progressbar li:first-child:after {
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            position: absolute;
+            left: 50%;
+        }
+
+        #progressbar li:last-child:after {
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        #progressbar li:first-child:after {
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+        /*Color number of the step and the connector before it*/
+        #progressbar li.active:before, #progressbar li.active:after {
+            background: #651FFF;
+        }
+
+        #progressbar li.active:before {
+            font-family: FontAwesome;
+            content: "\f00c";
+        }
+
+    .icon {
+        width: 60px;
+        height: 60px;
+        margin-right: 15px;
+    }
+
+    .icon-content {
+        padding-bottom: 20px;
+    }
+
+    @@media screen and (max-width: 992px) {
+        .icon-content {
+            width: 50%;
+        }
+    }
+
+    .stickyHeader {
+        font-size: 20px;
+        font-weight: 500;
+        color: #1ac3ff;
+    }
+
+    .containerExtra {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-color: #fff;
+        width: 320px;
+        height: 422px;
+        position: relative;
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.315);
+    }
+
+        .containerExtra .container__info {
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 20%;
+            display: flex;
+            align-items: flex-end;
+            padding: 15px 30px;
+            color: #fff;
+        }
+
+            .containerExtra .container__info span {
+                margin-right: 20px;
+            }
+
+            .containerExtra .container__info i {
+                margin-right: 10px;
+            }
+
+        .containerExtra .container__profile {
+            background-color: #ffcee5;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 0;
+        }
+
+            .containerExtra .container__profile img {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                object-position: center;
+                object-fit: cover;
+                margin-right: 10px;
+            }
+
+            .containerExtra .container__profile h2 {
+                color: #334454;
+                font-size: 1.2rem;
+            }
+
+            .containerExtra .container__profile p {
+                color: #a1b2bc;
+                font-size: 0.8rem;
+            }
+
+                .containerExtra .container__profile p b {
+                    font-style: italic;
+                }
+
+    .padTemplate {
+        padding-right: 21px;
+    }
+
+    .wrapper {
+        display: inline-flex;
+        height: 100px;
+        width: 630px;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 5px;
+        padding: 20px 15px;
+    }
+
+        .wrapper .option {
+            background: #fff;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 0 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            padding: 0 10px;
+            border: 2px solid lightgrey;
+            transition: all 0.3s ease;
+        }
+
+            .wrapper .option .dot {
+                height: 20px;
+                width: 20px;
+                background: #d9d9d9;
+                border-radius: 50%;
+                position: relative;
+            }
+
+                .wrapper .option .dot::before {
+                    position: absolute;
+                    content: "";
+                    top: 4px;
+                    left: 4px;
+                    width: 12px;
+                    height: 12px;
+                    background: #21b5ea;
+                    border-radius: 50%;
+                    opacity: 0;
+                    transform: scale(1.5);
+                    transition: all 0.3s ease;
+                }
+
+    input[type="radio"] {
+        display: none;
+    }
+
+    #option-1:checked:checked ~ .option-1,
+    #option-2:checked:checked ~ .option-2 {
+        border-color: #21b5ea;
+        background: #21b5ea;
+    }
+
+        #option-1:checked:checked ~ .option-1 .dot,
+        #option-2:checked:checked ~ .option-2 .dot {
+            background: #fff;
+        }
+
+            #option-1:checked:checked ~ .option-1 .dot::before,
+            #option-2:checked:checked ~ .option-2 .dot::before {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+    .wrapper .option span {
+        font-size: 20px;
+        color: #808080;
+    }
+
+    #option-1:checked:checked ~ .option-1 span,
+    #option-2:checked:checked ~ .option-2 span {
+        color: #fff;
+    }
+</style>
+
+<div class="page-content mainPage fade-in-up">
+    <h2>Item Name</h2>
+    <p></p>
+
+
+
+    <div class="sticky">
+        <div class="container cardAddition">
+            <div class="card">
+                <div class="row d-flex justify-content-between px-3 top">
+                    <div class="d-flex">
+
+                    </div>
+                    <div class="d-flex flex-column text-sm-right">
+
+                    </div>
+                </div>
+                <!-- Add class 'active' to progress -->
+                <div class="row d-flex justify-content-center">
+                    <div class="col-12">
+                        <ul id="progressbar" class="text-center">
+                            <li class="active step0"></li>
+                            <li class="active step0"></li>
+                            <li class="active step0"></li>
+                            <li class="step0"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row justify-content-between top">
+                    <div class="row d-flex icon-content" style="padding-left: 80px;">
+                        <img class="icon" src="https://i.imgur.com/9nnc9Et.png">
+                        <div class="d-flex flex-column">
+                            <p class="font-weight-bold">Select<br>Users</p>
+                        </div>
+                    </div>
+                    <div class="row d-flex icon-content">
+                        <img class="icon" src="https://i.imgur.com/u1AzR7w.png">
+                        <div class="d-flex flex-column">
+                            <p class="font-weight-bold">Select<br>Template</p>
+                        </div>
+                    </div>
+                    <div class="row d-flex icon-content">
+                        <img class="icon" src="https://i.imgur.com/TkPm63y.png">
+                        <div class="d-flex flex-column">
+                            <p class="font-weight-bold">Create<br>Schedule</p>
+                        </div>
+                    </div>
+                    <div class="row d-flex icon-content" style="padding-right: 70px;">
+                        <img class="icon" src="https://i.imgur.com/HdsziHP.png">
+                        <div class="d-flex flex-column">
+                            <p class="font-weight-bold">Process<br>Mail</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="sticky1">
+        <h3 class="stickyHeader">Users List For Mailing</h3>
+    </div>
+    <div class="ibox" style="background-color: antiquewhite;">
+        <div class="ibox-body">
+            <table class="table table-striped table-bordered table-hover" id="example-table" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Mobile</th>
+                        <th>Email</th>
+                        <th>BookDate</th>
+                        <th>IsRoundTrip</th>
+                        <th>DeparturePnr</th>
+                        <th>ReturnPnr</th>
+                        <th>TotalAmount</th>
+                        <th>PaidAmount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="sticky1">
+        <h3 class="stickyHeader">Choose Your Template</h3>
+    </div>
+
+    <div style="margin-top: 60px;padding-top: 60px;background-color: antiquewhite;padding-bottom: 60px;">
+        <div class="container">
+            <div class="row" style="display: flex; justify-content: center;">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="padTemplate">
+                                <div class="containerExtra">
+                                    <div class="container__profile">
+                                        <div class="container__profile__text">
+                                            <h2>White Mountains</h2>
+                                            <p>by <b>Joseph Therrien</b></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="padTemplate">
+                                <div class="containerExtra">
+                                    <di class="container__profile">
+                                        <div class="container__profile__text">
+                                            <h2>White Mountains</h2>
+                                            <p>by <b>Joseph Therrien</b></p>
+                                        </div>
+                                    </di>
+                                </div>
+                            </td>
+                            <td class="padTemplate">
+                                <div class="containerExtra">
+
+                                    <div class="container__profile">
+
+                                        <div class="container__profile__text">
+                                            <h2>White Mountains</h2>
+                                            <p>by <b>Joseph Therrien</b></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="padTemplate">
+                                <div class="containerExtra">
+
+                                    <div class="container__profile">
+
+                                        <div class="container__profile__text">
+                                            <h2>White Mountains</h2>
+                                            <p>by <b>Joseph Therrien</b></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="sticky1" style="margin-top: 60px;">
+        <h3 class="stickyHeader">Choose Your Schedule</h3>
+    </div>
+
+    <div style="margin-top: 60px;background-color: #faebd7;">
+        <div class="container">
+            <div class="row" style="display: flex; justify-content: center;">
+                <div class="wrapper">
+                    <input type="radio" name="select" id="option-1" checked>
+                    <input type="radio" name="select" id="option-2">
+                    <label for="option-1" class="option option-1">
+                        <div class="dot"></div>
+                        <span>Enable Schedule</span>
+                    </label>
+                    <label for="option-2" class="option option-2">
+                        <div class="dot"></div>
+                        <span>Disable Schedule</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+
+            $.get("/admin/getbookings", function (res) {
+                if (res) {
+                    for (i = 0; i < res.length; i++) {
+                        $('#example-table').dataTable().fnAddData([
+                            res[i].name,
+                            res[i].mobile,
+                            res[i].email,
+                            res[i].creationTime,
+                            res[i].isRoundTrip,
+                            res[i].departurePnr,
+                            res[i].returnPnr,
+                            res[i].totalAmount,
+                            res[i].paidAmount
+                        ]);
+                    }
+                }
+            });
+        });
+    </script>
+}

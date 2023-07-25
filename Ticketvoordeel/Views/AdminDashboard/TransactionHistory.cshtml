@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewData["Title"] = "Transaction History";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="page-heading">
+    <h1 class="page-title">Transaction History</h1>
+</div>
+<div class="page-content fade-in-up">
+    <div class="ibox">
+        <div class="ibox-head">
+            <div class="ibox-title">Transaction History List</div>
+        </div>
+        <div class="ibox-body">
+            <table class="table table-striped table-bordered table-hover" id="example-table" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>TransactionId</th>
+                        <th>Send Mail</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+
+            $.get("/admin/gettransactions", function (res) {
+                if (res) {
+                    for (i = 0; i < res.length; i++) {
+                        $('#example-table').dataTable().fnAddData([
+                            res[i].name,
+                            res[i].email,
+                            res[i].dateTime,
+                            res[i].status,
+                            res[i].transactionId,
+                            "<input type='button' class='btn btn-primary' value='Get details on mail' onClick='sendMail(" + res[i].id + ")' />"
+                        ]);
+                    }
+                }
+            });
+        });
+
+        function sendMail(id) {
+            $.get("/sendTransactionMail/" + id, function (res) {
+                if (res == "success") {
+                    alert("Mail sent successfully");
+                }
+                else {
+                    alert("Error sending mail");
+                }
+            });
+        }
+    </script>
+}
+
+
+

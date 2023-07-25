@@ -1,0 +1,65 @@
+
+--------------------------Start-----------------------
+--------------------------1/04/2023 12:37:23-----------------------
+10045
+
+
+{"language":"nl","resultCount":5,"searchKey":"go"}
+
+
+{"version":"1.1","content":{"headers":[{"key":"Content-Type","value":["application/json; charset=utf-8"]},{"key":"Content-Length","value":["16"]}]},"statusCode":200,"reasonPhrase":"OK","headers":[{"key":"Server","value":["Microsoft-IIS/8.5"]},{"key":"X-Powered-By","value":["ASP.NET"]},{"key":"Date","value":["Wed, 04 Jan 2023 07:07:16 GMT"]}],"trailingHeaders":[],"requestMessage":{"version":"1.1","content":{"headers":[{"key":"Content-Type","value":["application/json; charset=utf-8"]},{"key":"Content-Length","value":["50"]}]},"method":{"method":"POST"},"requestUri":"http://api.tursys.com/api/airpool/airports","headers":[{"key":"Accept","value":["application/x-www-form-urlencoded"]},{"key":"Authorization","value":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJodHRwOi8vYXBpLnR1cnN5cy5jb20vd3MvMjAxNS8wMS9pZGVudGl0eS9jbGFpbXMvY2xpZW50X2lkIjoiVElDX2Jid09EWTFzZ0RBN2VvMUQiLCJodHRwOi8vYXBpLnR1cnN5cy5jb20vd3MvMjAxNS8wMS9pZGVudGl0eS9jbGFpbXMvY29tcGFueV9pZCI6IjIiLCJuYW1laWQiOiIzMCIsImh0dHA6Ly9hcGkudHVyc3lzLmNvbS93cy8yMDE1LzAxL2lkZW50aXR5L2NsYWltcy9hZ2VudF9pZCI6IjUiLCJyb2xlIjoiQVBJIiwiaXNzIjoiaHR0cDovL2FwaS50dXJzeXMuY29tIiwiYXVkIjoidHVyc3lzLWFwaSIsImV4cCI6MTY3MjgxOTYzMiwibmJmIjoxNjcyODE2MDMyfQ.53MpU59Mb10sONuCyq8ViAEj0_kncxKei4xV6z35eoI"]},{"key":"Request-Id","value":["|d9a1815b-41f775868ead9b8c.2."]}],"properties":{}},"isSuccessStatusCode":true}
+
+
+--------------------------End-----------------------
+
+--------------------------Start-----------------------
+--------------------------1/04/2023 12:39:22-----------------------
+1097
+
+
+{"language":"nl","resultCount":5,"searchKey":"ams"}
+
+
+{"version":"1.1","content":{"headers":[{"key":"Content-Type","value":["application/json; charset=utf-8"]},{"key":"Content-Length","value":["354"]}]},"statusCode":200,"reasonPhrase":"OK","headers":[{"key":"Server","value":["Microsoft-IIS/8.5"]},{"key":"X-Powered-By","value":["ASP.NET"]},{"key":"Date","value":["Wed, 04 Jan 2023 07:09:20 GMT"]}],"trailingHeaders":[],"requestMessage":{"version":"1.1","content":{"headers":[{"key":"Content-Type","value":["application/json; charset=utf-8"]},{"key":"Content-Length","value":["51"]}]},"method":{"method":"POST"},"requestUri":"http://api.tursys.com/api/airpool/airports","headers":[{"key":"Accept","value":["application/x-www-form-urlencoded"]},{"key":"Authorization","value":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJodHRwOi8vYXBpLnR1cnN5cy5jb20vd3MvMjAxNS8wMS9pZGVudGl0eS9jbGFpbXMvY2xpZW50X2lkIjoiVElDX2Jid09EWTFzZ0RBN2VvMUQiLCJodHRwOi8vYXBpLnR1cnN5cy5jb20vd3MvMjAxNS8wMS9pZGVudGl0eS9jbGFpbXMvY29tcGFueV9pZCI6IjIiLCJuYW1laWQiOiIzMCIsImh0dHA6Ly9hcGkudHVyc3lzLmNvbS93cy8yMDE1LzAxL2lkZW50aXR5L2NsYWltcy9hZ2VudF9pZCI6IjUiLCJyb2xlIjoiQVBJIiwiaXNzIjoiaHR0cDovL2FwaS50dXJzeXMuY29tIiwiYXVkIjoidHVyc3lzLWFwaSIsImV4cCI6MTY3MjgxOTc2MCwibmJmIjoxNjcyODE2MTYwfQ.FJndOBzx2rL3iua4CSYkyvXHeMurSG7_Lz-NiHXXzHw"]},{"key":"Request-Id","value":["|d9a1815d-41f775868ead9b8c.2."]}],"properties":{}},"isSuccessStatusCode":true}
+
+
+--------------------------End-----------------------
+
+--------------------------Start-----------------------
+--------------------------1/04/2023 13:08:23-----------------------
+1289
+
+
+{"language":"nl","resultCount":5,"searchKey":"dus"}
+
+
+{"version":"1.1","content":{"headers":[{"key":"Content-Type","value":["application/json; charset=utf-8"]},{"key":"Content-Length","value":["491"]}]},"statusCode":200,"reasonPhrase":"OK","headers":[{"key":"Server","value":["Microsoft-IIS/8.5"]},{"key":"X-Powered-By","value":["ASP.NET"]},{"key":"Date","value":["Wed, 04 Jan 2023 07:38:18 GMT"]}],"trailingHeaders":[],"requestMessage":{"version":"1.1","content":{"headers":[{"key":"Content-Type","value":["application/json; charset=utf-8"]},{"key":"Content-Length","value":["51"]}]},"method":{"method":"POST"},"requestUri":"http://api.tursys.com/api/airpool/airports","headers":[{"key":"Accept","value":["application/x-www-form-urlencoded"]},{"key":"Authorization","value":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJodHRwOi8vYXBpLnR1cnN5cy5jb20vd3MvMjAxNS8wMS9pZGVudGl0eS9jbGFpbXMvY2xpZW50X2lkIjoiVElDX2Jid09EWTFzZ0RBN2VvMUQiLCJodHRwOi8vYXBpLnR1cnN5cy5jb20vd3MvMjAxNS8wMS9pZGVudGl0eS9jbGFpbXMvY29tcGFueV9pZCI6IjIiLCJuYW1laWQiOiIzMCIsImh0dHA6Ly9hcGkudHVyc3lzLmNvbS93cy8yMDE1LzAxL2lkZW50aXR5L2NsYWltcy9hZ2VudF9pZCI6IjUiLCJyb2xlIjoiQVBJIiwiaXNzIjoiaHR0cDovL2FwaS50dXJzeXMuY29tIiwiYXVkIjoidHVyc3lzLWFwaSIsImV4cCI6MTY3MjgyMTQ5OCwibmJmIjoxNjcyODE3ODk4fQ.dOVZQx85_a5T4UMc5UkMRBccaEgrkxjVtHc-_3QR6Dk"]},{"key":"Request-Id","value":["|7964f5ee-47fca8611aba0fb1.2."]}],"properties":{}},"isSuccessStatusCode":true}
+
+
+--------------------------End-----------------------
+
+--------------------------Start-----------------------
+--------------------------2/27/2023 16:36:21-----------------------
+7787
+
+
+{"language":"nl","resultCount":5,"searchKey":"bra"}
+
+
+{"version":"1.1","content":{"headers":[{"key":"Content-Type","value":["application/json; charset=utf-8"]},{"key":"Content-Length","value":["357"]}]},"statusCode":200,"reasonPhrase":"OK","headers":[{"key":"Server","value":["Microsoft-IIS/8.5"]},{"key":"X-Powered-By","value":["ASP.NET"]},{"key":"Date","value":["Mon, 27 Feb 2023 11:06:15 GMT"]}],"trailingHeaders":[],"requestMessage":{"version":"1.1","content":{"headers":[{"key":"Content-Type","value":["application/json; charset=utf-8"]},{"key":"Content-Length","value":["51"]}]},"method":{"method":"POST"},"requestUri":"http://api.tursys.com/api/airpool/airports","headers":[{"key":"Accept","value":["application/x-www-form-urlencoded"]},{"key":"Authorization","value":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJodHRwOi8vYXBpLnR1cnN5cy5jb20vd3MvMjAxNS8wMS9pZGVudGl0eS9jbGFpbXMvY2xpZW50X2lkIjoiVElDX2Jid09EWTFzZ0RBN2VvMUQiLCJodHRwOi8vYXBpLnR1cnN5cy5jb20vd3MvMjAxNS8wMS9pZGVudGl0eS9jbGFpbXMvY29tcGFueV9pZCI6IjIiLCJuYW1laWQiOiIzMCIsImh0dHA6Ly9hcGkudHVyc3lzLmNvbS93cy8yMDE1LzAxL2lkZW50aXR5L2NsYWltcy9hZ2VudF9pZCI6IjUiLCJyb2xlIjoiQVBJIiwiaXNzIjoiaHR0cDovL2FwaS50dXJzeXMuY29tIiwiYXVkIjoidHVyc3lzLWFwaSIsImV4cCI6MTY3NzQ5OTU3NiwibmJmIjoxNjc3NDk1OTc2fQ.XToE8T5G5bQc6cuGF_ixlBKYuc7UafLwP9YqzgBd360"]},{"key":"Request-Id","value":["|ee191aa5-42a8714376d8b17c.2."]}],"properties":{}},"isSuccessStatusCode":true}
+
+
+--------------------------End-----------------------
+
+--------------------------Start-----------------------
+--------------------------3/31/2023 14:23:01-----------------------
+4178
+
+
+{"language":"nl","resultCount":5,"searchKey":"ams"}
+
+
+{"version":"1.1","content":{"headers":[{"key":"Content-Type","value":["application/json; charset=utf-8"]},{"key":"Content-Length","value":["354"]}]},"statusCode":200,"reasonPhrase":"OK","headers":[{"key":"Server","value":["Microsoft-IIS/8.5"]},{"key":"X-Powered-By","value":["ASP.NET"]},{"key":"Date","value":["Fri, 31 Mar 2023 08:52:56 GMT"]}],"trailingHeaders":[],"requestMessage":{"version":"1.1","content":{"headers":[{"key":"Content-Type","value":["application/json; charset=utf-8"]},{"key":"Content-Length","value":["51"]}]},"method":{"method":"POST"},"requestUri":"http://api.tursys.com/api/airpool/airports","headers":[{"key":"Accept","value":["application/x-www-form-urlencoded"]},{"key":"Authorization","value":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJodHRwOi8vYXBpLnR1cnN5cy5jb20vd3MvMjAxNS8wMS9pZGVudGl0eS9jbGFpbXMvY2xpZW50X2lkIjoiVElDX2Jid09EWTFzZ0RBN2VvMUQiLCJodHRwOi8vYXBpLnR1cnN5cy5jb20vd3MvMjAxNS8wMS9pZGVudGl0eS9jbGFpbXMvY29tcGFueV9pZCI6IjIiLCJuYW1laWQiOiIzMCIsImh0dHA6Ly9hcGkudHVyc3lzLmNvbS93cy8yMDE1LzAxL2lkZW50aXR5L2NsYWltcy9hZ2VudF9pZCI6IjUiLCJyb2xlIjoiQVBJIiwiaXNzIjoiaHR0cDovL2FwaS50dXJzeXMuY29tIiwiYXVkIjoidHVyc3lzLWFwaSIsImV4cCI6MTY4MDI1NjM3NiwibmJmIjoxNjgwMjUyNzc2fQ.E-9ODRzAvLNXyVjTkstqOENzoNUxgR7wt8FG42Dt8O8"]},{"key":"Request-Id","value":["|a5d52347-4ea5f79f12c0cb62.2."]}],"properties":{}},"isSuccessStatusCode":true}
+
+
+--------------------------End-----------------------

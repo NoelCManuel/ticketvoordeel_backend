@@ -1,0 +1,48 @@
+
+--------------------------08-05-2021 19:47:24-----------------------
+Object reference not set to an instance of an object.
+
+--------------------------08-05-2021 19:47:43-----------------------
+Object reference not set to an instance of an object.
+
+--------------------------08-05-2021 19:55:42-----------------------
+Object reference not set to an instance of an object.
+
+--------------------------26-05-2021 23:03:55-----------------------
+Object reference not set to an instance of an object.
+
+--------------------------29-05-2021 15:09:16-----------------------
+An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure()' to the 'UseMySql' call.
+
+--------------------------01-06-2021 20:41:29-----------------------
+Error saving booking to DB : {"Request":{"UserEmail":"developer@adotravel.nl","IsReturnAvailable":false,"DepartureBookingObject":{"BasketKey":"EWQUM2EZ3W1","BookingLanguageCode":"nl","SalesAmount":"67.49000000000001","Payment":{"CurrencyCode":"EUR","PaymentMethodCode":"C"},"contactInformation":{"Title":"MR","FirstName":"test","LastName":"test","Phone":"+3164846r8","Email":"developer@adotravel.nl","BirthDate":"2000-06-01"},"TravelDate":"20210904"},"ReturnBookingObject":null,"AdultsCount":1,"ChildCount":1,"InfantCount":1,"Passengers":[{"TravellerType":"1","Title":"MR","FirstName":"test","LastName":"test","Birthdate":"20000601","CustomerNationalityId":2,"IdentityId":2,"IdentityNumber":"1234567"}],"IsFlightDelayCompensationIncluded":true,"FlightDelayCompensationAmount":9.5,"IsInsuranceSelected":false,"DepartureInsuranceAmount":0.0,"ReturnInsuranceAmount":0.0,"SelectedServicePackage":1,"ServicePackageAmount":0.0,"IsParkingSelected":false,"ParkingAmount":0.0,"ParkingSelectedAbbreviation":null,"ParkingQuoteRequest":{"couponCode":null,"currencyCode":null,"dateTimeFrom":"0001-01-01T00:00:00","dateTimeTo":"0001-01-01T00:00:00","labelAbbreviation":null,"locationAbbreviation":null,"referral":null},"parkingSelectedCount":0,"TotalAmount":67.49000000000001,"MainBooker":{"FirstName":"test","LastName":"test","BirthDate":"20000601","HouseNumber":"34737","PostCode":"357355","Place":"test","Street":"test","Email":"developer@adotravel.nl","Phone":"+3164846r8"},"sisowPayment":{"status":"","trxid":"90755326525","ec":"","sha1":""},"AppliedCredit":0,"Discounts":[],"ExternalItems":[{"BasketKey":"EWQUM2EZ3W","Name":"Vluchtvertragingscompensatie service","Amount":9.5}],"travelInfo":{"Departure":{"FGId":"0034","routeId":"811793995042208245","route":{"OriginAirport":{"Code":"AMS","Name":"Amsterdam Airport Schiphol","CityCode":"29998","CityName":null,"Deleted":false},"DestinationAirport":{"Code":"ADB","Name":"Izmir Adnan Menderes","CityCode":"31909","CityName":null,"Deleted":false}}},"Arrival":{"FGId":null,"routeId":null,"route":null}}},"DepartureBookResponse":null,"ReturnBookResponse":{"Pnr":null,"HasProblem":false,"Message":null},"travelInfo":null,"ParkingPNRList":null,"BookingSucceeded":false,"DepartureInsurancePolicyNumber":null,"ReturnInsurancePolicyNumber":null,"ParkingNumber":null,"IsParkingSucceeded":false}
+
+--------------------------01-06-2021 20:41:30-----------------------
+Error saving booking to DB. Exception : Object reference not set to an instance of an object.
+
+--------------------------01-06-2021 22:40:19-----------------------
+Object reference not set to an instance of an object.
+
+--------------------------05-06-2021 18:47:29-----------------------
+An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure()' to the 'UseMySql' call.
+
+--------------------------16-06-2021 15:24:42-----------------------
+Object reference not set to an instance of an object.
+
+--------------------------16-06-2021 15:55:43-----------------------
+An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure()' to the 'UseMySql' call.
+
+--------------------------22-06-2021 22:11:03-----------------------
+Error saving booking to DB : {"Request":{"UserEmail":"test@gmail.com3","IsReturnAvailable":false,"DepartureBookingObject":{"BasketKey":"L0QFEBRVDW","BookingLanguageCode":"nl","SalesAmount":"54.99","Payment":null,"contactInformation":{"Title":"MR","FirstName":"Test","LastName":"Test","Phone":"+316282447825","Email":"developer@adotravel.nl","AddressLine":null,"City":null,"PostCode":null},"TravelDate":"20211003"},"ReturnBookingObject":null,"AdultsCount":1,"ChildCount":0,"InfantCount":0,"Passengers":[{"TravellerType":"1","Title":"MR","FirstName":"Test","LastName":"Test","Birthdate":"20000610","CustomerNationalityId":2,"IdentityId":2,"IdentityNumber":"1234567"}],"IsFlightDelayCompensationIncluded":true,"FlightDelayCompensationAmount":9.5,"IsInsuranceSelected":false,"DepartureInsuranceAmount":0.0,"ReturnInsuranceAmount":0.0,"SelectedServicePackage":1,"ServicePackageAmount":0.0,"IsParkingSelected":false,"ParkingAmount":0.0,"ParkingSelectedAbbreviation":null,"ParkingQuoteRequest":{"couponCode":null,"currencyCode":null,"dateTimeFrom":"0001-01-01T00:00:00","dateTimeTo":"0001-01-01T00:00:00","labelAbbreviation":null,"locationAbbreviation":null,"referral":null},"parkingSelectedCount":0,"TotalAmount":64.49,"MainBooker":{"FirstName":"Test","LastName":"Test","BirthDate":"20000610","HouseNumber":"235245245","PostCode":"2452452","Place":"test","Street":"test","Email":"developer@adotravel.nl","Phone":"+316282447825"},"sisowPayment":null,"AppliedCredit":0,"Discounts":[],"ExternalItems":[{"BasketKey":"L0QFEBRVDW","Name":"Vluchtvertragingscompensatie service","Amount":9.5}],"travelInfo":{"Departure":{"FGId":"0030","routeId":"5554150351509193969","route":{"OriginAirport":{"Code":"DUS","Name":"Dusseldorf International","CityCode":"26703","CityName":null,"Deleted":false},"DestinationAirport":{"Code":"ADB","Name":"Izmir Adnan Menderes","CityCode":"31909","CityName":null,"Deleted":false},"MarketingCarrier":{"Code":"XC","Name":"Corendon Air"},"Segments":[{"Carrier":{"Code":"XC","Name":"Corendon Air"},"Duration":195,"Number":"XC3578","Legs":[{"Origin":{"Code":"DUS","Name":"Dusseldorf International","CityCode":"26703"},"Destination":{"Code":"ADB","Name":"Izmir Adnan Menderes","CityCode":"31909"},"DepartureTime":"2021-10-03T18:45:00","ArrivalTime":"2021-10-03T23:00:00"}],"BookingClass":"E"}]}},"Arrival":{"FGId":null,"routeId":null,"route":null}},"IsMerged":false},"DepartureBookResponse":{"Pnr":"D5VBFM","HasProblem":false,"Message":""},"ReturnBookResponse":{"Pnr":null,"HasProblem":false,"Message":null},"travelInfo":null,"ParkingPNRList":null,"BookingSucceeded":false,"DepartureInsurancePolicyNumber":null,"ReturnInsurancePolicyNumber":null,"ParkingNumber":null,"IsParkingSucceeded":false,"TransactionId":null}
+
+--------------------------22-06-2021 22:11:04-----------------------
+Error saving booking to DB. Exception : Object reference not set to an instance of an object.
+
+--------------------------24-06-2021 17:53:44-----------------------
+An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure()' to the 'UseMySql' call.
+
+--------------------------11-08-2021 13:00:24-----------------------
+Unexpected end when deserializing object. Path 'travelInfo.Arrival', line 1, position 5663.
+
+--------------------------11-08-2021 13:05:56-----------------------
+An exception has been raised that is likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure()' to the 'UseMySql' call.

@@ -1,0 +1,255 @@
+﻿
+@{
+    ViewData["Title"] = "ManageLastMinuteDeals";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="page-heading">
+    <h1 class="page-title">Manage Last Minute Deals</h1>
+</div>
+<div class="page-content fade-in-up">
+    <div class="ibox">
+        <div class="ibox-head">
+            <div class="ibox-title">Create/Edit Deals</div>
+            <div class="ibox-tools">
+                <a class="ibox-collapse"><i class="fa fa-minus"></i></a>
+            </div>
+        </div>
+        <div class="ibox-body">
+            <form class="form-horizontal" id="form-sample-1" method="post" novalidate="novalidate">
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Column Number</label>
+                    <div class="col-sm-10">
+                        <input type="hidden" id="Id" name="Id" />
+                        <select class="form-control" name="ColumnNumber" id="ColumnNumber">
+                            <option value="">Select</option>
+                            <option value="1">Column 1</option>
+                            <option value="2">Column 2</option>
+                            <option value="3">Column 3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Travel Date</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" type="date" name="TravelDate" id="TravelDate">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">From Airport</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" type="text" name="FromAirport" id="FromAirport">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">To Airport</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" type="text" name="ToAirport" id="ToAirport">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">From Airport Code</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" type="text" name="FromAirportCode" id="FromAirportCode">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">To Airport Code</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" type="text" name="ToAirportCode" id="ToAirportCode">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Departure Time(HH:SS)</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" type="text" name="DepartureTime" id="DepartureTime">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Arrival Time(HH:SS)</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" type="text" name="ArrivalTime" id="ArrivalTime">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Airline</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" type="text" name="Airline" id="Airline">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Price</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" type="number" name="Price" id="Price">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-10 ml-sm-auto">
+                        <button class="btn btn-info" type="submit">Submit</button>
+                        <button class="btn btn-info" type="reset" onclick="resetForm()">Reset</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="ibox">
+        <div class="ibox-head">
+            <div class="ibox-title">Pages List</div>
+        </div>
+        <div class="ibox-body">
+            <table class="table table-striped table-bordered table-hover" id="example-table" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <th>Column Number</th>
+                        <th>Price</th>
+                        <th>From Airport</th>
+                        <th>To Airport</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+
+            tinymce.init({
+                selector: 'textarea',
+                plugins: 'advlist autolink lists link image charmap print preview hr anchor pagebreak',
+                toolbar_mode: 'floating',
+            });
+
+            $.get("/admin/getlastminutedeals", function (res) {
+                if (res) {
+                    for (i = 0; i < res.length; i++) {
+                        $('#example-table').dataTable().fnAddData([
+                            res[i].columnNumber,
+                            res[i].price,
+                            res[i].fromAirport,
+                            res[i].toAirport,
+                            '<button class="btn btn-primary" onclick="editPage(' + res[i].id + ')">Edit</button><button class="btn btn-danger" onclick="deletePage(' + res[i].id + ')">Delete</button>'
+                        ]);
+                    }
+                }
+            });
+
+            $.validator.setDefaults({
+                submitHandler: function () {
+                    $.ajax({
+                        url: "/admin/savelastminutedeals",
+                        type: 'post',
+                        data: $('#form-sample-1').serialize(),
+                        async: false,
+                        success: function (data) {
+                            if (data == 'success') {
+                                alert("Details saved successfully");
+                                location.reload();
+                            }
+                            else {
+                                alert('Error saving data. Please try again later');
+                            }
+                        },
+                        error: function () {
+                            alert('Error saving data. Please try again later');
+                        }
+                    });
+                }
+            });
+
+            $("#form-sample-1").validate({
+                rules: {
+                    TravelDate: {
+                        required: !0
+                    },
+                    ColumnNumber: {
+                        required: !0
+                    },
+                    ToAirport: {
+                        required: !0
+                    },
+                    FromAirportCode: {
+                        required: !0
+                    },
+                    ToAirportCode: {
+                        required: !0
+                    },
+                    DepartureTime: {
+                        required: !0
+                    },
+                    ArrivalTime: {
+                        required: !0
+                    },
+                    Airline: {
+                        required: !0
+                    },
+                    Price: {
+                        required: !0
+                    },
+                    MetaDescription: {
+                        required: !0
+                    },
+                    FromAirport: {
+                        required: !0
+                    }
+                },
+                errorClass: "help-block error",
+                highlight: function (e) {
+                    $(e).closest(".form-group.row").addClass("has-error")
+                },
+                unhighlight: function (e) {
+                    $(e).closest(".form-group.row").removeClass("has-error")
+                },
+            });
+        });
+
+        function deletePage(id) {
+            if (confirm("Are you sure to delete?")) {
+                $.get("/admin/deletelastminutedeal/" + id, function (res) {
+                    if (res == "success") {
+                        alert("Deleted successfully");
+                        location.reload();
+                    }
+                    else {
+                        alert("Error. Please try again later");
+                    }
+                });
+            }           
+        }
+
+        function editPage(id) {
+            $.get("/admin/getlastminutedeal/" + id, function (res) {
+                if (res == "error") {
+                    alert("Error. Please try again later");
+                }
+                else {
+                    $("#Id").val(res.id);
+                    $("#ColumnNumber").val(res.columnNumber);
+                    $("#TravelDate").val(res.travelDate);
+                    $("#FromAirportCode").val(res.fromAirportCode);
+                    $("#ToAirportCode").val(res.toAirportCode);
+                    $("#DepartureTime").val(res.departureTime);
+                    $("#ArrivalTime").val(res.arrivalTime);
+                    $("#Airline").val(res.airline);
+                    $("#Price").val(res.price);
+                    $("#FromAirport").val(res.fromAirport);
+                    $("#ToAirport").val(res.toAirport);
+                    document.documentElement.scrollTop = 0;
+                }
+            });
+        }
+
+        function resetForm() {
+            $("#Id").val('0');
+            $("#form-sample-1").trigger("reset");
+        }
+
+    </script>
+}
+
+
+

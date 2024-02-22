@@ -1,5 +1,6 @@
 "use strict";
 exports.__esModule = true;
+exports.createImage = exports.readFileAsDataURL = void 0;
 var jquery_1 = require("jquery");
 /**
  * @method readFileAsDataURL

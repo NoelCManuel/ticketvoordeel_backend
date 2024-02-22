@@ -41,7 +41,7 @@ namespace Ticketvoordeel.Helpers
                         formattedNextMonth = "0" + formattedNextMonth;
                     }
                     var getNextYear = DateTime.Now.Year.ToString();
-                    var getNextDay = "25";
+                    var getNextDay = "05";
                 #endregion
 
                 #region SETTING LOCATION

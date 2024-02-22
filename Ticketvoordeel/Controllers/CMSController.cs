@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using Contracts;
 using Entities.Models;
@@ -769,6 +771,40 @@ namespace Ticketvoordeel.Controllers
             catch (Exception Ex)
             {
                 return null;
+            }
+        }
+
+        [HttpGet]
+        [Route("getlocationoffset")]
+        public async Task<int> GetLocationOffset(string depLocation, string arrLocation)
+        {
+            string baseUrl = "http://api.timezonedb.com/v2.1/convert-time-zone?key=EKSHN213XFN5&format=json&from=";
+            string apiUrl = baseUrl + depLocation + "&to=" + arrLocation;
+
+            using (var httpClient = new HttpClient())
+            {
+                httpClient.BaseAddress = new Uri("http://api.timezonedb.com/v2.1/");
+                httpClient.DefaultRequestHeaders.Accept.Clear();
+                httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                HttpResponseMessage response = await httpClient.GetAsync(apiUrl);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    string responseBody = await response.Content.ReadAsStringAsync();
+                    var jsonResponse = Newtonsoft.Json.JsonConvert.DeserializeObject<TimeZoneLocation>(responseBody);
+                    if (jsonResponse.status == "OK")
+                    {
+                        return Convert.ToInt32(jsonResponse.offset);
+                    }
+                    else
+                    {
+                        return 0;
+                    }
+                }
+                else
+                {
+                    return 0;
+                }
             }
         }
 
